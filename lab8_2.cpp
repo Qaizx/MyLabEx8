@@ -1,7 +1,20 @@
 #include<iostream>
 using namespace std;
 
-//Write the function printO() here
+void printO(int N, int M){
+	if(N == 0 || M <= 0){
+		cout << "Invalid input";
+	}
+	for(int i = 0; i < N; i++){
+		if(N == 0 || M <= 0){
+		break;
+		}
+		for(int i = 0; i < M; i++){
+			cout << "O";
+		}
+		cout << "\n";
+	}
+}
 
 int main(){
 	
@@ -18,7 +31,7 @@ int main(){
 	cout << "\n";	
 	
 	printO(7,-1);
-	cout << "\n";	
+	cout << "\n";
 	
 	return 0;
 }
